@@ -336,7 +336,20 @@ public class BrowseProductsJPanel extends javax.swing.JPanel {
 
     private void btnCheckOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCheckOutActionPerformed
         // TODO add your handling code here:
+        masterOrderList.addNewOrder(currentOrder);
+        currentOrder = new Order();
         
+        populateCombo();
+        populateProductTable();
+        populateCartTable();
+        
+        txtNewQuantity.setText("");
+        txtSalesPrice.setText("");
+        txtSearch.setText("");
+        
+        spnQuantity.setValue(0);
+        
+      JOptionPane.showMessageDialog(this, "Thank you for your purchase. Looking forward to see you again");
         
        
     }//GEN-LAST:event_btnCheckOutActionPerformed
