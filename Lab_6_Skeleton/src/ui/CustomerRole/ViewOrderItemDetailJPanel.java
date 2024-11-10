@@ -6,19 +6,32 @@ package ui.CustomerRole;
 
 import java.awt.CardLayout;
 import javax.swing.JPanel;
+import model.OrderItem;
 
 /**
  *
  * @author Zerel
  */
 public class ViewOrderItemDetailJPanel extends javax.swing.JPanel {
+    
+    JPanel userProcessContainer;
+    OrderItem item;
 
     
     /**
      * Creates new form ViewOrderItemDetailJPanel
      */
-    public ViewOrderItemDetailJPanel() {
+    public ViewOrderItemDetailJPanel(JPanel userProcessContainer, OrderItem item) {
         initComponents();
+        this.userProcessContainer = userProcessContainer;
+        this.item = item;
+        
+        txtProductName.setText(item.getProduct().getProdName());
+        txtProductId.setText(String.valueOf(item.getProduct().getModelNumber()));
+        txtProductId.setText(String.valueOf(item.getProduct().getModelNumber()));
+        txtProductId.setText(String.valueOf(item.getProduct().getModelNumber()));
+        txtProductId.setText(String.valueOf(item.getProduct().getModelNumber()));
+        txtProductId.setText(String.valueOf(item.getProduct().getModelNumber()));
         
     }
 

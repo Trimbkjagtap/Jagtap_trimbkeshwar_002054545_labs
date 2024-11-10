@@ -44,7 +44,10 @@ public class OrderItem {
         this.quantity = quantity;
     }
     
-    
+    @Override
+    public String toString(){
+        return this.product.toString();
+    }
     
     
 }
