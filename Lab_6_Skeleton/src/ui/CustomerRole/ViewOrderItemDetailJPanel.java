@@ -28,10 +28,10 @@ public class ViewOrderItemDetailJPanel extends javax.swing.JPanel {
         
         txtProductName.setText(item.getProduct().getProdName());
         txtProductId.setText(String.valueOf(item.getProduct().getModelNumber()));
-        txtProductId.setText(String.valueOf(item.getProduct().getModelNumber()));
-        txtProductId.setText(String.valueOf(item.getProduct().getModelNumber()));
-        txtProductId.setText(String.valueOf(item.getProduct().getModelNumber()));
-        txtProductId.setText(String.valueOf(item.getProduct().getModelNumber()));
+        txtSalesPrice.setText(String.valueOf(item.getSalesPrice()));
+        txtQuantity.setText(String.valueOf(item.getQuantity()));
+        txtTotal.setText(String.valueOf(item.getQuantity()*item.getSalesPrice()));
+        
         
     }
 
